@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Blogger</title>
+<style>
+  body { margin:0; font-family:'Inter', sans-serif; background:#0c0c0c; color:#f2f2f2; }
+  header { height:90vh; background:url('profile.jpg') center/cover no-repeat; display:flex; flex-direction:column; justify-content:flex-end; padding:60px 40px; backdrop-filter:brightness(0.7); }
+  header h1 { font-size:60px; margin:0; text-shadow:0 4px 16px rgba(0,0,0,0.6); }
+  header p { font-size:24px; opacity:0.9; margin-top:10px; }
+  .section { max-width:1200px; margin:80px auto; padding:0 30px; }
+  .title { font-size:40px; margin-bottom:30px; letter-spacing:1px; }
+  .about { display:flex; gap:50px; flex-wrap:wrap; }
+  .about img { width:360px; border-radius:20px; box-shadow:0 6px 20px rgba(0,0,0,0.4); }
+  .about-text { flex:1; min-width:300px; line-height:1.7; font-size:18px; }
+  .highlight { color:#ffcc66; font-weight:600; }
+  .projects { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:30px; margin-top:40px; }
+  .project-card { background:#1a1a1a; border-radius:18px; overflow:hidden; transition:transform .3s, box-shadow .3s; }
+  .project-card:hover { transform:translateY(-6px); box-shadow:0 10px 30px rgba(255,204,102,0.2); }
+  .project-card img { width:100%; height:260px; object-fit:cover; }
+  .project-card h3 { margin:18px; font-size:22px; }
+  .project-card p { margin:0 18px 20px; opacity:0.8; }
+  .dubai { font-size:20px; line-height:1.8; opacity:0.9; }
+  footer { background:#000; padding:50px 20px; text-align:center; margin-top:60px; font-size:18px; }
+</style>
+</head>
+<body>
+<header style="height:45vh; position:relative; overflow:hidden; display:flex; align-items:flex-end; padding:30px 40px;">
+  <video src="header-video.mp4" autoplay muted loop playsinline style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; filter:brightness(0.55);"></video>
+  <div style="position:relative; z-index:2;">
+    <h1 style="font-size:42px; margin:0; text-shadow:0 4px 14px rgba(0,0,0,0.6);">Eva — Lifestyle Blogger</h1>
+    <p style="font-size:20px; opacity:0.9; margin-top:8px;">Путешествия • Эстетика • Дубай • Эмоции • Контент</p>
+  </div>
+</header>
+
+<section class="section">
+  <h2 class="title">Обо мне</h2>
+  <div class="about">
+    <img src="profile.jpg" alt="profile" />
+    <div class="about-text">
+      <p>Привет! Меня зовут Ева — я создаю эстетичный и живой lifestyle‑контент, который соединяет в себе энергию путешествий, атмосферу городской жизни и искренние эмоции. Мой стиль — это сочетание яркого визуала, лёгкости, динамики и природной женственности. Я люблю движение, новые впечатления, гастрономию, красивые места и истории, которые делают мир вокруг нас насыщеннее.</p>
+      <p>Я много путешествую, и каждое новое место для меня — вдохновение для создания визуальных историй: море, солнечный свет, вечерний город, стильные пространства, рестораны, моменты свободы и искренней радости. Мне нравится передавать не просто картинку, а атмосферу, ощущение момента, эмоцию, которую хочется почувствовать снова.</p>
+      <p>Сейчас я развиваюсь в <span class="highlight">Дубае</span> — городе возможностей, эстетики, роскоши и бесконечных точек вдохновения. Здесь я создаю контент для аудиторий, которым важны качество, ощущение лайфстайла, энергия движения и визуальная гармония. Открыта к сотрудничеству с брендами в направлениях: travel, fashion, beauty, рестораны, премиальные сервисы, активности и lifestyle‑проекты.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="title">Проекты</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="project1.jpg" />
+      <h3>Ресторанный контент</h3>
+      <p>Эстетика блюд, атмосфера вечера, эмоции и сторителлинг, который создаёт желание посетить локацию.</p>
+    </div>
+    <div class="project-card">
+      <img src="project2.jpg" />
+      <h3>Путешествия & lifestyle</h3>
+      <p>Море, солнце, лёгкость, стиль — визуальные истории, которые вдохновляют на поездки.</p>
+    </div>
+    <div class="project-card">
+      <img src="project3.jpg" />
+      <h3>Экстрим и активный отдых</h3>
+      <p>Яркие эмоции, динамика и формат, который всегда вызывает большой отклик у аудитории.</p>
+    </div>
+    <div class="project-card">
+      <img src="project4.jpg" />
+      <h3>Fashion‑контент</h3>
+      <p>Стиль, композиция и эстетичный визуал, подходящий для премиальных брендов.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="title">Почему Дубай?</h2>
+  <p class="dubai">Дубай — один из самых визуально насыщенных городов в мире. Здесь сочетаются роскошь, современная архитектура, море, стиль, лучшие рестораны, отели, пляжи и постоянно развивающаяся индустрия lifestyle‑контента. Это место, где блог может расти стремительно — благодаря огромному количеству вдохновляющих локаций и брендов, которым важно сотрудничество с создателями визуального контента. Здесь я вижу своё развитие, новые проекты, масштабирование и работу с премиальными компаниями.</p>
+</section>
+
+<footer>
+  <p>Контакты для сотрудничества: email@example.com</p>
+</footer>
+
+</body>
+</html>
